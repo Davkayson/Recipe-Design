@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Young+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --White: #ffffff;
+    --Stone-100: #f3e6d8;
+    --Stone-150: #e4ded8;
+    --Stone-600: #5f574e;
+    --Stone-900: #302d2c;
+    --Brown-800: #854632;
+    --Rose-800: #7b284f;
+    --Rose-50: #fff5fa;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+    font-family: "Young Serif", sans-serif;
+    width: 100vw;
+    font-weight: 400;
+    background-color: var(--White);
+    margin: 0 auto;
+}
+
+.container {
+    background-color: var(--White);
+}
+
+.image {
+    width: 100%;
+    margin: 0 0 15px;
+}
+
+.image img {
+    width: 100%;
+}
+
+.first-text {
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+
+}
+
+.first-text h1 {
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: var(--Stone-900);
+    line-height: 1.5rem;
+}
+
+.first-text p {
+    color: var(--Stone-600);
+    font-weight: 400;
+}
+
+.preparation-time {
+    background-color: var(--Rose-50);
+    padding: 10px;
+    border-radius: 1rem;
+    margin-inline: 25px;
+}
+
+.preparation-time h3 {
+    margin: 20px;
+    color: var(--Rose-800);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.preparation-time ul {
+    list-style-position: outside;
+    margin: 20px;
+    color: var(--Rose-800);
+}
+
+.preparation-time ul li span {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--Stone-600);
+}
+
+.preparation-time ul li {
+    color: var(--Stone-600);
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.ingredient {
+    margin-top: 40px;
+    margin-inline: 25px;
+}
+
+.ingredient h2 {
+    margin: 20px;
+    color: var(--Brown-800);
+    font-weight: 400;
+}
+
+
+ul.unordered {
+    list-style-position: outside;
+    margin: 20px;
+    color: var(--Brown-800);
+}
+
+ul ::marker {
+    font-size: 0.7rem;
+}
+
+.ingredient ul li {
+    padding: 3px;
+    font-size: 0.8rem;
+}
+
+.ingredient ul li span {
+    color: var(--Stone-600);
+    font-weight: 400;
+}
+
+.instructions {
+    margin-inline: 30px;
+}
+
+.instructions h2 {
+    margin: 20px 0px;
+    color: var(--Brown-800);
+    font-weight: 400;
+}
+
+
+ol.ordered-list {
+    list-style-position: outside;
+    padding-left: 2rem;
+}
+
+::marker {
+    font-size: 1.5rem;
+    color: var(--Brown-800);
+    font-size: 0.8rem;
+}
+
+.instructions ol li {
+    padding-left: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.instructions ol li span {
+    color: var(--Stone-600);
+    font-size: 0.8rem;
+}
+
+.nutrition {
+    margin-inline: 30px;
+    margin-bottom: 20px;
+}
+
+.nutrition h2 {
+    color: var(--Brown-800);
+    margin: 20px 0;
+    font-weight: 400;
+}
+
+.nutrition p {
+    margin-bottom: 15px;
+    color: var(--Stone-600);
+    font-size: 0.8rem;
+}
+
+.box:nth-child(1) {
+    border-bottom: 1px solid var(--Stone-150);
+    color: var(--Stone-600);
+}
+
+.menu > div {
+    font-size: 0.8rem;
+}
+
+.box:nth-child(2) {
+    border-bottom: 1px solid var(--Stone-150);
+    color: var(--Brown-800);
+    font-weight: 600;
+}
+
+.box:nth-child(3) {
+    border-bottom: 1px solid var(--Stone-150);
+    color: var(--Stone-600);
+}
+
+.box:nth-child(4) {
+    border-bottom: 1px solid var(--Stone-150);
+    color: var(--Brown-800);
+    font-weight: 600;
+}
+
+.box:nth-child(5) {
+    border-bottom: 1px solid var(--Stone-150);
+    color: var(--Stone-600);
+}
+
+.box:nth-child(6) {
+    border-bottom: 1px solid var(--Stone-150);
+    color: var(--Brown-800);
+    font-weight: 600;
+}
+
+.box:nth-child(7) {
+    color: var(--Stone-600);
+}
+
+.box:nth-child(8) {
+    color: var(--Brown-800);
+    font-weight: 600;
+}
+
+.nutrition .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.nutrition .menu > div {
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+hr {
+    width: 80%;
+    margin-inline: auto;
+}
+}
+
+@media screen and (min-width: 481px) {
+    body {
+    font-family: "Young Serif", sans-serif;
+    margin: 2rem;
+    font-weight: 400;
+    background-color: var(--Stone-100);
+}
+
+.container {
+    background-color: var(--White);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.image {
+    width: 100%;
+    margin: 0 0 15px;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 0.2rem;
+}
+
+.first-text {
+    margin-bottom: 25px;
+}
+
+.first-text h1 {
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: var(--Stone-900);
+}
+
+.first-text p {
+    color: var(--Stone-600);
+    font-weight: 400;
+}
+
+.preparation-time {
+    background-color: var(--Rose-50);
+    padding: 10px;
+    border-radius: 1rem;
+}
+
+.preparation-time h3 {
+    margin: 20px;
+    color: var(--Rose-800);
+    font-weight: 600;
+}
+
+.preparation-time ul {
+    list-style-position: inside;
+    margin: 20px;
+    color: var(--Rose-800);
+}
+
+.preparation-time ul li span {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--Stone-600);
+}
+
+.preparation-time ul li {
+    color: var(--Stone-600);
+    padding: 0.5rem;
+}
+
+.ingredient {
+   margin-top: 40px;
+}
+
+.ingredient h2 {
+    margin: 20px;
+    color: var(--Brown-800);
+}
+
+
+ul.unordered {
+    list-style-position: inside;
+    margin: 20px;
+    color: var(--Brown-800);
+}
+
+ul ::marker {
+    font-size: 0.7rem;
+}
+
+.ingredient ul li {
+    padding: 3px;
+}
+
+.ingredient ul li span {
+    color: var(--Stone-600);
+    font-weight: 400;
+}
+
+
+.instructions {
+    margin: 0 20px 20px;
+}
+
+.instructions h2 {
+    margin: 20px 0px;
+    color: var(--Brown-800);
+}
+
+
+ol.ordered-list {
+    list-style-position: outside;
+    padding-left: 2rem;
+}
+
+::marker {
+    font-size: 1.5rem;
+    color: var(--Brown-800);
+    
+}
+
+.instructions ol li {
+    padding-left: 1rem;
+}
+
+
+
+.instructions ol li span {
+    color: var(--Stone-600);
+
+}
+
+.nutrition {
+    margin: 20px
+    
+}
+
+.nutrition h2 {
+    color: var(--Brown-800);
+    margin: 20px 0;
+}
+
+.nutrition p {
+    margin-bottom: 15px;
+    color: var(--Stone-600);
+}
+
+.box:nth-child(1) {
+    border-bottom: 1px solid var(--Stone-150);
+    color: var(--Stone-600);
+}
+
+.box:nth-child(2) {
+    border-bottom: 1px solid var(--Stone-150);
+    color: var(--Brown-800);
+    font-weight: 600;
+}
+
+.box:nth-child(3) {
+    border-bottom: 1px solid var(--Stone-150);
+    color: var(--Stone-600);
+}
+
+.box:nth-child(4) {
+    border-bottom: 1px solid var(--Stone-150);
+    color: var(--Brown-800);
+    font-weight: 600;
+}
+
+.box:nth-child(5) {
+    border-bottom: 1px solid var(--Stone-150);
+    color: var(--Stone-600);
+}
+
+.box:nth-child(6) {
+    border-bottom: 1px solid var(--Stone-150);
+    color: var(--Brown-800);
+    font-weight: 600;
+}
+
+.box:nth-child(7) {
+    color: var(--Stone-600);
+}
+
+.box:nth-child(8) {
+    color: var(--Brown-800);
+    font-weight: 600;
+}
+
+
+.nutrition .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.nutrition .menu > div {
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+}
+
+   
+
+    
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
